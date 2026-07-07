@@ -1,0 +1,39 @@
+.card{
+  background:#111827;
+  border:1px solid #1f2937;
+  border-radius:12px;
+  padding:18px;
+}
+
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.icon{
+  display:flex;
+}
+
+.delta{
+  font-size:12px;
+  font-weight:600;
+}
+
+.value{
+  margin-top:16px;
+  font-size:28px;
+  font-weight:700;
+  color:#fff;
+}
+
+.unit{
+  margin-left:4px;
+  font-size:14px;
+}
+
+.label{
+  margin-top:6px;
+  color:#9ca3af;
+  font-size:13px;
+}

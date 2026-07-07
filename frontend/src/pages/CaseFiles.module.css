@@ -1,0 +1,90 @@
+.page { display: flex; flex-direction: column; gap: 20px; animation: fadeInUp 0.4s ease; }
+
+.pageHeader { display: flex; align-items: flex-end; justify-content: space-between; }
+
+.heading { font-family: var(--font-display); font-size: 22px; font-weight: 700; color: var(--gray-50); letter-spacing: 1px; }
+
+.subheading { font-family: var(--font-mono); font-size: 10px; color: var(--gray-500); letter-spacing: 1px; margin-top: 4px; }
+
+.filterCard { padding: 14px 18px; }
+
+.filterRow { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+
+.searchWrap { position: relative; display: flex; align-items: center; flex: 0 0 260px; }
+
+.searchIcon { position: absolute; left: 10px; color: var(--gray-600); pointer-events: none; }
+
+.search {
+  width: 100%;
+  padding: 7px 10px 7px 30px;
+  background: var(--navy-700);
+  border: var(--border-subtle);
+  border-radius: 5px;
+  font-size: 12.5px;
+  color: var(--gray-200);
+  font-family: var(--font-body);
+}
+.search::placeholder { color: var(--gray-600); }
+.search:focus { outline: none; border-color: rgba(79,195,247,0.4); }
+
+.filterGroup { display: flex; align-items: center; gap: 6px; }
+
+.filterLabel { font-family: var(--font-mono); font-size: 9px; color: var(--gray-600); letter-spacing: 1.5px; margin-right: 2px; }
+
+.filterBtn {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: var(--gray-500);
+  background: var(--navy-700);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.filterBtn:hover { color: var(--gray-200); border-color: rgba(79,195,247,0.2); }
+.filterActive { color: var(--ice-400) !important; border-color: rgba(79,195,247,0.4) !important; background: rgba(79,195,247,0.08) !important; }
+
+.table { width: 100%; border-collapse: collapse; }
+
+.table th {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--gray-600);
+  letter-spacing: 1.5px;
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-size: 12.5px;
+  color: var(--gray-300);
+  vertical-align: middle;
+}
+
+.row { cursor: pointer; transition: background 0.15s; }
+.row:hover td { background: rgba(79,195,247,0.04); }
+
+.caseId { font-family: var(--font-mono); font-size: 11px; color: var(--ice-400); white-space: nowrap; }
+.title { font-weight: 500; color: var(--gray-100); min-width: 180px; }
+.suspect { color: var(--gray-400); font-size: 12px; max-width: 150px; }
+.officer { color: var(--gray-400); font-size: 12px; white-space: nowrap; }
+.date { font-family: var(--font-mono); font-size: 11px; color: var(--gray-500); white-space: nowrap; }
+.matches { font-family: var(--font-mono); font-size: 11px; font-weight: 700; }
+.arrow { color: var(--gray-600); }
+
+.empty { text-align: center; padding: 40px; color: var(--gray-600); font-family: var(--font-mono); font-size: 12px; }
+
+.tableFooter {
+  padding: 10px 12px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gray-600);
+  border-top: 1px solid rgba(255,255,255,0.05);
+  letter-spacing: 0.5px;
+}

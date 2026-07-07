@@ -1,0 +1,85 @@
+.page { display: flex; flex-direction: column; gap: 18px; animation: fadeInUp 0.4s ease; }
+
+.top { display: flex; align-items: center; gap: 16px; }
+
+.back {
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--font-mono); font-size: 11px; color: var(--gray-500);
+  letter-spacing: 1px; cursor: pointer; background: none; border: none;
+  padding: 4px 0;
+}
+.back:hover { color: var(--ice-400); }
+
+.caseIdRow { display: flex; align-items: center; gap: 8px; }
+
+.caseId { font-family: var(--font-mono); font-size: 13px; color: var(--ice-400); letter-spacing: 1px; font-weight: 700; }
+
+.title { font-family: var(--font-display); font-size: 22px; font-weight: 700; color: var(--gray-50); letter-spacing: 0.5px; }
+
+.summaryRow {
+  display: flex; gap: 24px; padding: 14px 18px;
+  background: var(--navy-800); border: var(--border-subtle); border-radius: 7px;
+  flex-wrap: wrap;
+}
+
+.metaItem { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--gray-400); }
+.metaItem svg { color: var(--gray-600); }
+.metaItem strong { color: var(--gray-100); font-weight: 600; }
+
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+.leftCol { display: flex; flex-direction: column; gap: 14px; }
+.rightCol { display: flex; flex-direction: column; gap: 14px; }
+
+.sectionTitle { font-family: var(--font-mono); font-size: 9px; color: var(--gray-600); letter-spacing: 2px; margin-bottom: 14px; }
+.sectionTitleRow { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+.sectionTitleRow .sectionTitle { margin-bottom: 0; }
+
+.suspectBox { display: flex; align-items: center; gap: 14px; }
+.suspectAvatar {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--navy-700); border: 1px solid rgba(79,195,247,0.2);
+  display: flex; align-items: center; justify-content: center; color: var(--gray-600); flex-shrink: 0;
+}
+.suspectName { font-size: 15px; font-weight: 600; color: var(--gray-100); margin-bottom: 4px; }
+.suspectNote { font-family: var(--font-mono); font-size: 10px; color: var(--gray-500); }
+
+.matchList { display: flex; flex-direction: column; gap: 12px; margin-bottom: 14px; }
+.matchItem { display: flex; align-items: center; gap: 10px; }
+.matchRank { font-family: var(--font-mono); font-size: 10px; color: var(--gray-600); min-width: 22px; }
+.matchAvatar {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--navy-700); border: 1px solid rgba(79,195,247,0.2);
+  display: flex; align-items: center; justify-content: center; color: var(--gray-600); flex-shrink: 0;
+}
+.matchBody { flex: 1; }
+.matchName { font-size: 13px; font-weight: 600; color: var(--gray-100); margin-bottom: 4px; }
+.matchMeta { display: flex; align-items: center; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+.matchId { font-family: var(--font-mono); font-size: 10px; color: var(--gray-500); }
+.rerunBtn { width: 100%; justify-content: center; }
+
+/* Evidence */
+.evidenceList { display: flex; flex-direction: column; gap: 6px; }
+.evidenceItem {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 10px; background: var(--navy-700); border-radius: 5px;
+  border: 1px solid transparent; transition: border-color 0.15s;
+}
+.evidenceItem:hover { border-color: rgba(79,195,247,0.2); }
+.evidenceIcon { color: var(--ice-400); opacity: 0.7; flex-shrink: 0; }
+.evidenceName { flex: 1; font-size: 12.5px; color: var(--gray-200); font-family: var(--font-mono); }
+.evidenceSize { font-family: var(--font-mono); font-size: 10px; color: var(--gray-600); }
+
+/* Timeline */
+.timeline { display: flex; flex-direction: column; gap: 0; }
+.timelineItem { display: flex; align-items: flex-start; gap: 12px; position: relative; padding-bottom: 16px; }
+.timelineItem:last-child { padding-bottom: 0; }
+.timelineDot { width: 8px; height: 8px; border-radius: 50%; background: var(--ice-400); flex-shrink: 0; margin-top: 4px; }
+.timelineLine {
+  position: absolute; left: 3.5px; top: 16px; bottom: 0;
+  width: 1px; background: rgba(79,195,247,0.2);
+}
+.timelineBody { display: flex; flex-direction: column; gap: 2px; }
+.timelineTime { font-family: var(--font-mono); font-size: 10px; color: var(--gray-500); }
+.timelineEvent { font-size: 13px; color: var(--gray-200); }
+
+.actions { display: flex; gap: 10px; }

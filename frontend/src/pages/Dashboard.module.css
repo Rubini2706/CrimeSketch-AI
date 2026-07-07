@@ -1,0 +1,258 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeInUp 0.4s ease;
+}
+
+.pageHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gray-50);
+  letter-spacing: 1px;
+}
+
+.subheading {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--green-400);
+  letter-spacing: 1px;
+  margin-top: 4px;
+  opacity: 0.8;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.midRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Chart card */
+.chartCard { padding: 20px; }
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.cardTitle {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gray-400);
+  letter-spacing: 1.5px;
+}
+
+.cardMeta {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--ice-400);
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.barChart {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 120px;
+}
+
+.barCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+}
+
+.barTrack {
+  flex: 1;
+  width: 100%;
+  background: var(--navy-700);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  position: relative;
+}
+
+.barFill {
+  width: 100%;
+  background: var(--ice-400);
+  border-radius: 3px 3px 0 0;
+  opacity: 0.85;
+  transition: height 0.6s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.barFillCases {
+  width: 100%;
+  background: var(--amber-500);
+  border-radius: 3px 3px 0 0;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: height 0.6s ease;
+}
+
+.barLabel {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--gray-600);
+  letter-spacing: 0.5px;
+}
+
+.chartLegend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--gray-500);
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  display: inline-block;
+  margin-left: 8px;
+}
+.legendDot:first-child { margin-left: 0; }
+
+/* Activity */
+.activityCard { padding: 20px; }
+
+.activityList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.activityItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.activityItem:last-child { border-bottom: none; }
+
+.activityDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.activityBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.activityEvent {
+  font-size: 12px;
+  color: var(--gray-200);
+  font-weight: 500;
+}
+
+.activityCase {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gray-500);
+  margin-top: 2px;
+}
+
+.activityRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.activityConf {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.activityTime {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--gray-600);
+  margin-top: 2px;
+}
+
+.viewAll {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: none;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--ice-400);
+  cursor: pointer;
+  opacity: 0.7;
+  letter-spacing: 0.5px;
+}
+.viewAll:hover { opacity: 1; }
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4px;
+}
+
+.table th {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  color: var(--gray-600);
+  letter-spacing: 1.5px;
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.table td {
+  padding: 11px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-size: 12.5px;
+  color: var(--gray-300);
+  vertical-align: middle;
+}
+
+.tableRow {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.tableRow:hover td { background: rgba(79,195,247,0.04); }
+
+.caseId { font-family: var(--font-mono); font-size: 11px; color: var(--ice-400); }
+.caseTitle { font-weight: 500; color: var(--gray-100); max-width: 220px; }
+.officer { color: var(--gray-400); font-size: 12px; }
+.date { font-family: var(--font-mono); font-size: 11px; color: var(--gray-500); }
+.matches { font-family: var(--font-mono); font-size: 11px; font-weight: 700; }
+.rowArrow { color: var(--gray-600); }  
